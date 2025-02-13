@@ -27,6 +27,51 @@
 
     <!-- Import CSS: Main Stylesheet -->
     <link rel="stylesheet" href="./assets/css/main.css" />
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #222;
+        }
+        .icons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 900px;
+        }
+        .icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .icon img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .icon span {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    </style>
   </head>
 
   <body>
@@ -82,27 +127,47 @@
           I am a Senior Flutter Developer with over 4 years of experience in building, optimizing, and deploying high-performance mobile applications. My expertise includes Flutter, Dart, Firebase, in-app purchases, real-time database management, and seamless API integrations. I specialize in handling complex project architectures, implementing scalable solutions, and optimizing app performance. My role involves problem-solving, logical thinking, and designing efficient workflows to enhance user experience. I have successfully worked on applications with real-time messaging, push notifications, and secure payment systems while ensuring smooth deployments to the App Store and Play Store. Currently, I lead mobile development initiatives at Mclansys Solutions Private Limited, where I collaborate with cross-functional teams, mentor developers, and drive innovative solutions in mobile applications.
         </p>
       </div>
-<!-- Technology Stack: Languages -->
-<div class="tech">
-  <h2>Languages</h2>
-  <div class="icon-row">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original-wordmark.svg" height="150" width="150" alt="Dart Logo">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original-wordmark.svg" height="150" width="150" alt="Kotlin Logo">
-  </div>
-  <p>My preferred technologies for front-end development and component design.</p>
-</div>
 
-<!-- Technology Stack: Tools -->
-<div class="tech">
-  <h2>Tools</h2>
-  <div class="icon-row">
-    <i class="devicon-git-plain-wordmark colored" style="font-size: 4rem;"></i>
-    <i class="devicon-visualstudio-plain colored" style="font-size: 4rem;"></i>
-    <i class="devicon-github-plain-wordmark colored" style="font-size: 4rem;"></i>
-  </div>
-  <p>My favorite tools for version control, code editing, and collaboration.</p>
-</div>
-
+<section class="section">
+    <h1>Technologies & Tools</h1>
+    <div class="icons-container">
+        <!-- Dart -->
+        <div class="icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png" alt="Dart">
+            <span>Dart</span>
+        </div>
+        <!-- Kotlin -->
+        <div class="icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png" alt="Kotlin">
+            <span>Kotlin</span>
+        </div>
+        <!-- Git -->
+        <div class="icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git">
+            <span>Git</span>
+        </div>
+        <!-- GitHub -->
+        <div class="icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+            <span>GitHub</span>
+        </div>
+        <!-- Firebase -->
+        <div class="icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg" alt="Firebase">
+            <span>Firebase</span>
+        </div>
+        <!-- Vertex AI -->
+        <div class="icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google_Cloud_logo_%282020%29.svg/512px-Google_Cloud_logo_%282020%29.svg.png" alt="Vertex AI">
+            <span>Vertex AI</span>
+        </div>
+        <!-- Google Maps API -->
+        <div class="icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Google_Maps_Logo.svg" alt="Google Maps API">
+            <span>Google Maps API</span>
+        </div>
+    </div>
+</section>
  
   <!-- Featured Projects -->
   <section id="projects" style="background: #f8f9fa; padding: 40px;">
