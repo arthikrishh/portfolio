@@ -27,6 +27,49 @@
 
     <!-- Import CSS: Main Stylesheet -->
     <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <style>
+      /* Style for Technologies & Tools Section */
+.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 150px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.tech-card span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+    </style>
   </head>
 
   <body>
@@ -83,53 +126,52 @@
           I am a Senior Flutter Developer with over 4 years of experience in building, optimizing, and deploying high-performance mobile applications. My expertise includes Flutter, Dart, Firebase, in-app purchases, real-time database management, and seamless API integrations. I specialize in handling complex project architectures, implementing scalable solutions, and optimizing app performance. My role involves problem-solving, logical thinking, and designing efficient workflows to enhance user experience. I have successfully worked on applications with real-time messaging, push notifications, and secure payment systems while ensuring smooth deployments to the App Store and Play Store. Currently, I lead mobile development initiatives at Mclansys Solutions Private Limited, where I collaborate with cross-functional teams, mentor developers, and drive innovative solutions in mobile applications.
         </p>
       </div>
-
 <section class="section">
-   
   <h1 style="margin-bottom: 16px;">Technologies & Tools</h1>
-<p style="margin-bottom: 24px;">
+  <p style="margin-bottom: 24px;">
     These are the technologies and tools I specialize in to craft innovative, efficient, and scalable solutions. 
     From building robust mobile applications to implementing AI-driven functionalities, each tool plays a crucial role in my development journey.
-</p>
+  </p>
 
-    <div class="icons-container">
-  <div class="icon">
-            <img src="assets/img/icons/flutter.svg" alt="Flutter">
-            <span>Flutter</span>
-        </div>
-        <!-- Dart -->
-        <div class="icon">
-            <img src="assets/img/icons/dart.svg" alt="Dart">
-            <span>Dart</span>
-        </div>
-        <!-- Kotlin -->
-        <div class="icon">
-            <img src="assets/img/icons/kotlin-original.svg" alt="Kotlin">
-            <span>Kotlin</span>
-        </div>
-        <!-- Git -->
-        <div class="icon">
-            <img src="assets/img/icons/git.svg" alt="Git">
-            <span>Git</span>
-        </div>
-        <!-- GitHub -->
-        <div class="icon">
-            <img src="assets/img/icons/github.svg" alt="GitHub">
-            <span>GitHub</span>
-        </div>
-        <!-- Firebase -->
-        <div class="icon">
-            <img src="assets/img/icons/1175544_firebase_google_icon.png" alt="Firebase">
-            <span>Firebase</span>
-        </div>
-        <!-- Vertex AI -->
-     <div class="icon">
-    <img src="assets/img/Vertex_AI_Logo.svg" alt="Vertex AI">
-    <span>Vertex AI</span>
-</div>
-       
+  <div class="icons-container">
+    <!-- Flutter -->
+    <div class="tech-card">
+      <img src="assets/img/icons/flutter.svg" alt="Flutter" />
+      <span>Flutter</span>
     </div>
+    <!-- Dart -->
+    <div class="tech-card">
+      <img src="assets/img/icons/dart.svg" alt="Dart" />
+      <span>Dart</span>
+    </div>
+    <!-- Kotlin -->
+    <div class="tech-card">
+      <img src="assets/img/icons/kotlin-original.svg" alt="Kotlin" />
+      <span>Kotlin</span>
+    </div>
+    <!-- Git -->
+    <div class="tech-card">
+      <img src="assets/img/icons/git.svg" alt="Git" />
+      <span>Git</span>
+    </div>
+    <!-- GitHub -->
+    <div class="tech-card">
+      <img src="assets/img/icons/github.svg" alt="GitHub" />
+      <span>GitHub</span>
+    </div>
+    <!-- Firebase -->
+    <div class="tech-card">
+      <img src="assets/img/icons/1175544_firebase_google_icon.png" alt="Firebase" />
+      <span>Firebase</span>
+    </div>
+    <!-- Vertex AI -->
+    <div class="tech-card">
+      <img src="assets/img/Vertex_AI_Logo.svg" alt="Vertex AI" />
+      <span>Vertex AI</span>
+    </div>
+  </div>
 </section>
+
  
   <!-- Featured Projects -->
   <section id="projects" style="background: #f8f9fa; padding: 40px;">
