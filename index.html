@@ -97,7 +97,7 @@
   transition: color 0.3s, background-color 0.3s; /* Smooth hover effects */
 }
 
-.header-icons i:hover {
+.header-icons a i:hover {
   color: #9c9c9c; /* Change to white on hover */
   background-color: #474747; /* LinkedIn blue or custom hover background */
 }
@@ -118,15 +118,15 @@
 }
 
 .header-icons a:nth-child(2) i {
-  color: #333; /* Example: GitHub default color */
+  color: #f8f9fa; /* Example: GitHub default color */
 }
 
 .header-icons a:nth-child(3) i {
-  color: #d32f2f; /* Example: PDF (red) */
+  color: #f8f9fa; /* Example: PDF (red) */
 }
 
 .header-icons a:nth-child(4) i {
-  color: #3f51b5; /* Example: Email icon color */
+  color: #f8f9fa; /* Example: Email icon color */
 }
 
 .header-icons a i:hover {
@@ -138,11 +138,20 @@
   font-size: inherit; /* Optional: Set size as per the parent's font size */
 }
 
+       .icon:hover {
+    transform: scale(1.2); /* Zoom in by 20% */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
  
 
 
     </style>
-    
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+
   </head>
 
   <body>
