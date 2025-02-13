@@ -54,23 +54,29 @@
             gap: 40px;
             max-width: 900px;
         }
-        .icon {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        .icon img {
-            width: 80px;
-            height: 80px;
-            margin-bottom: 10px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .icon span {
-            font-size: 1rem;
-            font-weight: 500;
-        }
+      .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px; /* Background size */
+    height: 100px; /* Background size */
+    background-color: #f5f5f5; /* Background color */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon img {
+    width: 50%; /* Adjust icon size */
+    height: 50%; /* Adjust icon size */
+}
+
+.icon span {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
     </style>
   </head>
 
@@ -82,13 +88,13 @@
        <span class="site-description">Senior Flutter Developer • AI & Payment Integrations • Mobile App Architect</span>
         </h1>
         <div class="header-icons">
-          <a aria-label="My LinkedIn Profile" target="_blank" href="www.linkedin.com/in/aarthikrishnan07">
+          <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/aarthikrishnan07">
             <i class="icon fa fa-linkedin" aria-hidden="true"></i>
           </a>
           <a aria-label="My Github Profile" target="_blank" href="https://github.com/arthikrishh">
             <i class="icon fa fa-github-alt" aria-hidden="true"></i>
           </a>
-          <a aria-label="My Résumé" target="_blank" href="https://www.adityavsingh.com/resume.html">
+          <a aria-label="My Résumé" target="_blank" href="https://www.dropbox.com/scl/fi/6dhtk1b6icion1dl9vy81/Aarthi-Krishnan-Resume.pdf?rlkey=ajmj0gs5r76l3o8eb15uy66za&st=urstymd1&dl=0">
             <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
           </a>
           <a aria-label="Send Email" href="mailto:aarthikrish001@gmail.com" target="_blank"
@@ -129,7 +135,13 @@
       </div>
 
 <section class="section">
-    <h1>Technologies & Tools</h1>
+   
+  <h1 style="margin-bottom: 16px;">Technologies & Tools</h1>
+<p>
+    These are the technologies and tools I specialize in to craft innovative, efficient, and scalable solutions. 
+    From building robust mobile applications to implementing AI-driven functionalities, each tool plays a crucial role in my development journey.
+</p>
+
     <div class="icons-container">
   <div class="icon">
             <img src="assets/img/icons/flutter.svg" alt="Flutter">
