@@ -27,130 +27,67 @@
 
     <!-- Import CSS: Main Stylesheet -->
     <link rel="stylesheet" href="./assets/css/main.css" />
-     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-        .section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .section h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: #222;
-        }
-        .icons-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 40px;
-            max-width: 900px;
-        }
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+        color: #333;
+      }
+
+      .header {
+        text-align: center;
+        padding: 50px 20px;
+      }
+
+      .header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #222;
+      }
+
+      .site-description {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 30px;
+      }
+
+      .header-icons {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .header-icons a {
+        text-decoration: none;
+        font-size: 24px;
+        color: #333;
+        background-color: #f1f1f1;
+        border-radius: 50%;
+        padding: 10px;
+        transition: transform 0.3s, background-color 0.3s, color 0.3s;
+      }
+
+      .header-icons a:hover {
+        transform: scale(1.1);
+        background-color: #0077b5;
+        color: #fff;
+      }
+
       .icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100px; /* Background size */
-    height: 100px; /* Background size */
-    background-color: #f8f9fa; /* Background color */
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+        text-align: center;
+        cursor: pointer;
+      }
 
-.icon img {
-    width: 50%; /* Adjust icon size */
-    height: 50%; /* Adjust icon size */
-}
-
-.icon span {
-    margin-top: 8px;
-    font-size: 14px;
-    color: #333;
-}
-       .header-icons {
-  display: flex;
-  gap: 16px; /* Adjust spacing between icons as needed */
-  justify-content: center;
-  align-items: center;
-}
-
-.header-icons a {
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-.header-icons i {
-  font-size: 40px; /* Adjust icon size */
-  color: #0073b1; /* Set default color (e.g., LinkedIn blue) */
-  background-color: #f5f5f5; /* Optional: Background color for the icon */
-  border-radius: 50%; /* Circular icons */
-  padding: 10px; /* Spacing within the circle */
-  transition: color 0.3s, background-color 0.3s; /* Smooth hover effects */
-}
-
-.header-icons a i:hover {
-  color: #9c9c9c; /* Change to white on hover */
-  background-color: #474747; /* LinkedIn blue or custom hover background */
-}
-       .down {
-  all: unset; /* Resets all inherited and applied styles */
-  display: inline-block; /* Optional: Make it inline-block if needed */
-}
-
-.down .icon {
-  all: unset; /* Resets all inherited styles for the icon */
-  display: inline-block; /* Optional: Ensure proper rendering of the icon */
-}
-
-       .header-icons a i {
-  color: #0077b5; /* Example: LinkedIn Blue for initial color */
-  font-size: 24px; /* Adjust size if needed */
-  transition: color 0.3s ease; /* Smooth transition for hover */
-}
-
-.header-icons a:nth-child(2) i {
-  color: #f8f9fa; /* Example: GitHub default color */
-}
-
-.header-icons a:nth-child(3) i {
-  color: #f8f9fa; /* Example: PDF (red) */
-}
-
-.header-icons a:nth-child(4) i {
-  color: #f8f9fa; /* Example: Email icon color */
-}
-
-.header-icons a i:hover {
-  color: #ff9800; /* Change to a hover color if needed */
-}
-       i.fa {
-  all: unset; /* Reset all inherited styles */
-  font-family: FontAwesome; /* Ensure the icon renders correctly */
-  font-size: inherit; /* Optional: Set size as per the parent's font size */
-}
-
-       .icon:hover {
-    transform: scale(1.2); /* Zoom in by 20% */
-    transition: transform 0.3s ease; /* Smooth transition */
-}
-
- 
-
-
+      .icon:hover {
+        transform: scale(1.2);
+        transition: transform 0.3s ease;
+      }
     </style>
-    <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-/>
+    
 
   </head>
 
@@ -162,27 +99,38 @@
        <span class="site-description">Senior Flutter Developer • AI & Payment Integrations • Mobile App Architect</span>
         </h1>
   <div class="header-icons">
-  <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/aarthikrishnan07">
-    <i class="icon fa fa-linkedin" aria-hidden="true"></i>
-  </a>
-  <a aria-label="My Github Profile" target="_blank" href="https://github.com/arthikrishh">
-    <i class="icon fa fa-github-alt" aria-hidden="true"></i>
-  </a>
-  <a aria-label="My Résumé" target="_blank" href="https://www.dropbox.com/scl/fi/6dhtk1b6icion1dl9vy81/Aarthi-Krishnan-Resume.pdf?rlkey=ajmj0gs5r76l3o8eb15uy66za&st=urstymd1&dl=0">
-    <i class="icon fa fa-file-pdf-o" aria-hidden="true"></i>
-  </a>
-  <a aria-label="Send Email" href="mailto:aarthikrish001@gmail.com" target="_blank">
-    <i class="icon fa fa-envelope"></i>
-  </a>
-</div>
+          <a
+            aria-label="My LinkedIn Profile"
+            target="_blank"
+            href="https://www.linkedin.com/in/aarthikrishnan07"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            aria-label="My GitHub Profile"
+            target="_blank"
+            href="https://github.com/arthikrishh"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            aria-label="My Résumé"
+            target="_blank"
+            href="https://www.dropbox.com/scl/fi/6dhtk1b6icion1dl9vy81/Aarthi-Krishnan-Resume.pdf?rlkey=ajmj0gs5r76l3o8eb15uy66za&st=urst"
+          >
+            <i class="fas fa-file-pdf"></i>
+          </a>
+          <a aria-label="Send Email" href="mailto:aarthi.krishnan@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
 
         <div class="header-links">
           <a class="link" href="#about" data-scroll>About Me</a>
           <a class="link" href="#projects" data-scroll>Projects</a>
         </div>
       </div>
-<a href="#about" data-scroll>
-  <i class="fa fa-chevron-down" aria-hidden="true"></i>
+  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 </a>
  
     </div>
