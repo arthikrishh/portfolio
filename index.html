@@ -32,7 +32,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #5c5c5c;
+            background-color: #f8f9fa;
             color: #333;
         }
         .section {
@@ -61,7 +61,7 @@
     justify-content: center;
     width: 100px; /* Background size */
     height: 100px; /* Background size */
-    background-color: #5c5c5c; /* Background color */
+    background-color: #f8f9fa; /* Background color */
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -110,10 +110,39 @@
   all: unset; /* Resets all inherited styles for the icon */
   display: inline-block; /* Optional: Ensure proper rendering of the icon */
 }
+
+       .header-icons a i {
+  color: #0077b5; /* Example: LinkedIn Blue for initial color */
+  font-size: 24px; /* Adjust size if needed */
+  transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.header-icons a:nth-child(2) i {
+  color: #333; /* Example: GitHub default color */
+}
+
+.header-icons a:nth-child(3) i {
+  color: #d32f2f; /* Example: PDF (red) */
+}
+
+.header-icons a:nth-child(4) i {
+  color: #3f51b5; /* Example: Email icon color */
+}
+
+.header-icons a i:hover {
+  color: #ff9800; /* Change to a hover color if needed */
+}
+       i.fa {
+  all: unset; /* Reset all inherited styles */
+  font-family: FontAwesome; /* Ensure the icon renders correctly */
+  font-size: inherit; /* Optional: Set size as per the parent's font size */
+}
+
  
 
 
     </style>
+    
   </head>
 
   <body>
@@ -123,45 +152,30 @@
           <span class="site-title">AARTHI KRISHNAN</span>
        <span class="site-description">Senior Flutter Developer • AI & Payment Integrations • Mobile App Architect</span>
         </h1>
-     <div class="header-icons">
-  <a
-    aria-label="My LinkedIn Profile"
-    target="_blank"
-    href="https://www.linkedin.com/in/aarthikrishnan07"
-  >
+  <div class="header-icons">
+  <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/aarthikrishnan07">
     <i class="icon fa fa-linkedin" aria-hidden="true"></i>
   </a>
-  <a
-    aria-label="My Github Profile"
-    target="_blank"
-    href="https://github.com/arthikrishh"
-  >
+  <a aria-label="My Github Profile" target="_blank" href="https://github.com/arthikrishh">
     <i class="icon fa fa-github-alt" aria-hidden="true"></i>
   </a>
-  <a
-    aria-label="My Résumé"
-    target="_blank"
-    href="https://www.dropbox.com/scl/fi/6dhtk1b6icion1dl9vy81/Aarthi-Krishnan-Resume.pdf?rlkey=ajmj0gs5r76l3o8eb15uy66za&st=urstymd1&dl=0"
-  >
+  <a aria-label="My Résumé" target="_blank" href="https://www.dropbox.com/scl/fi/6dhtk1b6icion1dl9vy81/Aarthi-Krishnan-Resume.pdf?rlkey=ajmj0gs5r76l3o8eb15uy66za&st=urstymd1&dl=0">
     <i class="icon fa fa-file-pdf-o" aria-hidden="true"></i>
   </a>
-  <a
-    aria-label="Send Email"
-    href="mailto:aarthikrish001@gmail.com"
-    target="_blank"
-  >
-    <i class="icon fa fa-envelope" aria-hidden="true"></i>
+  <a aria-label="Send Email" href="mailto:aarthikrish001@gmail.com" target="_blank">
+    <i class="icon fa fa-envelope"></i>
   </a>
 </div>
+
         <div class="header-links">
           <a class="link" href="#about" data-scroll>About Me</a>
           <a class="link" href="#projects" data-scroll>Projects</a>
         </div>
       </div>
-  <ai class="down" href="#about" data-scroll>
-  <icon class="icon fa fa-chevron-down" aria-hidden="true"></icon>
-</ai>
+<a href="#about" data-scroll>
+  <i class="fa fa-chevron-down" aria-hidden="true"></i>
 </a>
+ 
     </div>
 
     <!-- About Section -->
