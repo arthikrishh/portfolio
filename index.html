@@ -84,17 +84,39 @@
 }
 
 .header-icons a {
+  margin: 0 10px;
   text-decoration: none;
-  color: inherit; /* Use the default text color */
 }
 
 .header-icons i {
-  font-size: 24px; /* Set icon size (adjust as needed) */
-  transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+  font-size: 40px; /* Adjust icon size */
+  color: #0073b1; /* Set default color (e.g., LinkedIn blue) */
+  background-color: #f5f5f5; /* Optional: Background color for the icon */
+  border-radius: 50%; /* Circular icons */
+  padding: 10px; /* Spacing within the circle */
+  transition: color 0.3s, background-color 0.3s; /* Smooth hover effects */
 }
 
 .header-icons i:hover {
-  transform: scale(1.1); /* Slight zoom-in on hover */
+  color: #ffffff; /* Change to white on hover */
+  background-color: #0073b1; /* LinkedIn blue or custom hover background */
+}
+
+       .down {
+  display: inline-block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.down i {
+  font-size: 50px; /* Adjust size of the scroll-down icon */
+  color: #0073b1; /* Set a color for visibility */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.down i:hover {
+  transform: scale(1.2); /* Slight zoom-in effect */
+  color: #005288; /* Slightly darker blue on hover */
 }
 
 
@@ -108,26 +130,44 @@
           <span class="site-title">AARTHI KRISHNAN</span>
        <span class="site-description">Senior Flutter Developer • AI & Payment Integrations • Mobile App Architect</span>
         </h1>
-        <div class="header-icons">
-          <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/aarthikrishnan07">
-            <i class="icon fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a aria-label="My Github Profile" target="_blank" href="https://github.com/arthikrishh">
-            <i class="icon fa fa-github-alt" aria-hidden="true"></i>
-          </a>
-          <a aria-label="My Résumé" target="_blank" href="https://www.dropbox.com/scl/fi/6dhtk1b6icion1dl9vy81/Aarthi-Krishnan-Resume.pdf?rlkey=ajmj0gs5r76l3o8eb15uy66za&st=urstymd1&dl=0">
-            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
-          </a>
-          <a aria-label="Send Email" href="mailto:aarthikrish001@gmail.com" target="_blank"
-            ><i class="icon fa fa-envelope"></i
-          ></a>
-        </div>
+     <div class="header-icons">
+  <a
+    aria-label="My LinkedIn Profile"
+    target="_blank"
+    href="https://www.linkedin.com/in/aarthikrishnan07"
+  >
+    <i class="icon fa fa-linkedin" aria-hidden="true"></i>
+  </a>
+  <a
+    aria-label="My Github Profile"
+    target="_blank"
+    href="https://github.com/arthikrishh"
+  >
+    <i class="icon fa fa-github-alt" aria-hidden="true"></i>
+  </a>
+  <a
+    aria-label="My Résumé"
+    target="_blank"
+    href="https://www.dropbox.com/scl/fi/6dhtk1b6icion1dl9vy81/Aarthi-Krishnan-Resume.pdf?rlkey=ajmj0gs5r76l3o8eb15uy66za&st=urstymd1&dl=0"
+  >
+    <i class="icon fa fa-file-pdf-o" aria-hidden="true"></i>
+  </a>
+  <a
+    aria-label="Send Email"
+    href="mailto:aarthikrish001@gmail.com"
+    target="_blank"
+  >
+    <i class="icon fa fa-envelope" aria-hidden="true"></i>
+  </a>
+</div>
         <div class="header-links">
           <a class="link" href="#about" data-scroll>About Me</a>
           <a class="link" href="#projects" data-scroll>Projects</a>
         </div>
       </div>
-      <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+     <a class="down" href="#about" data-scroll>
+  <i class="icon fa fa-chevron-down" aria-hidden="true"></i>
+</a>
     </div>
 
     <!-- About Section -->
