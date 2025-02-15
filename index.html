@@ -37,43 +37,40 @@
             background-color: #f8f9fa;
             color: #333;
         }
-      
-      /* Style for Technologies & Tools Section */
-.icons-container {
+
+      .icons-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px; /* Spacing between the tech cards */
   justify-content: center;
 }
 
 .tech-card {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100px; /* Background size */
-    height: 100px; /* Background size */
-    background-color: #ffffff; /* Background color */
-    border-radius: 18px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Space inside each card */
+  margin: 10px; /* Space outside each card */
+  border-radius: 12px; /* Optional: rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: light shadow for depth */
+  background-color: #fff; /* Optional: background color for better visibility */
+  transition: transform 0.2s ease-in-out; /* Optional: smooth hover effect */
 }
 
 .tech-card img {
-  width: 50px;
-  height: 50px;
- 
+  width: 60px; /* Adjust size of icons */
+  height: auto;
+  margin-bottom: 10px; /* Spacing between image and text */
 }
 
 .tech-card span {
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: #333;
+  font-size: 16px; /* Adjust font size of labels */
+  color: #333; /* Adjust label color */
   text-align: center;
 }
 
 .tech-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 
     </style>
@@ -140,8 +137,8 @@
 </p>
       </div>
 <section class="section">
-<h1 style="margin-bottom: 16px; color: #007BFF; text-align: center;">Technologies & Tools</h1>
- <p style="margin: 24px 0;">
+<h1 style="margin-bottom: 20px; color: #007BFF; text-align: center;">Technologies & Tools</h1>
+ <p style="margin-bottom: 30px">
   These are the technologies and tools I specialize in to craft innovative, efficient, and scalable solutions. 
   From building robust mobile applications to implementing AI-driven functionalities, each tool plays a crucial role in my development journey.
 </p>
@@ -191,7 +188,8 @@
   <!-- Android Studio -->
   <div class="tech-card">
     <img src="assets/img/icons/android-studio-icon.svg" alt="Android Studio" />
-    <span>Android Studio</span>
+    <span>Android</span>
+      <span>Studio</span>
   </div>
       <!-- Figma -->
   <div class="tech-card">
@@ -200,18 +198,23 @@
   </div>
   </div>
 </section>
-<section id="projects" style="background: #f8f9fa; padding: 90px 20px; width: 600%; box-sizing: border-box;">
+
+      
+<section id="projects" style="background: #f8f9fa; padding: 60px 20px; width: 100%; box-sizing: border-box;">
   <h2 style="font-size: 2.5rem; color: #007bff; text-align: center; margin-bottom: 40px;">
     Featured Projects
   </h2>
 
   <!-- Project Cards -->
-<div style="display: flex; flex-direction: column; gap: 30px; margin: 0; padding: 0 20px; width: 100%;">
+  <div style="display: flex; flex-direction: column; gap: 30px; margin: 0; padding: 0 20px; width: 100%;">
+    
     <!-- Project 1 -->
     <div style="background: white; padding: 55px; border-radius: 30px; box-shadow: 0 6px 10px rgba(0,0,0,0.1);">
       <h3 style="color: #007bff; font-size: 1.5rem; margin-bottom: 10px;">BeYouArts</h3>
       <p style="color: #333; line-height: 1.5;">
         BeYouArts is a cutting-edge platform designed for artists to showcase their talent globally, connect with audiences, and monetize their creativity. 
+        I had the opportunity to contribute to this project during my time at <strong>McLanSys Solution Pvt Ltd</strong>, where I worked as a <strong>Flutter Developer</strong>. 
+        My role included implementing custom artist profiles, integrating secure payment systems, and designing a seamless search feature for art styles.
       </p>
       <ul style="list-style-type: none; padding-left: 0; margin-top: 15px;">
         <li>🎨 Custom artist profiles</li>
@@ -219,14 +222,14 @@
         <li>🔍 Search by art style</li>
         <li>📊 Admin dashboards for insights</li>
       </ul>
-      <a href="#" style="color: #007bff; font-weight: bold; text-decoration: underline; display: inline-block; margin-top: 10px;">Explore BeYouArts</a>
     </div>
 
     <!-- Project 2 -->
     <div style="background: white; padding: 55px; border-radius: 30px; box-shadow: 0 6px 10px rgba(0,0,0,0.1);">
       <h3 style="color: #007bff; font-size: 1.5rem; margin-bottom: 10px;">Courtship App</h3>
       <p style="color: #333; line-height: 1.5;">
-        A gamified dating app that redefines relationships by fostering meaningful connections and innovative designs. Tailored for modern love seekers.
+        A gamified dating app that redefines relationships by fostering meaningful connections and innovative designs. I contributed to this project while at 
+        <strong>McLanSys Solution Pvt Ltd</strong>, where I focused on developing advanced matching algorithms and integrating gamified referral systems to boost user engagement.
       </p>
       <ul style="list-style-type: none; padding-left: 0; margin-top: 15px;">
         <li>💌 Advanced matching algorithms</li>
@@ -234,14 +237,15 @@
         <li>🚀 Gamified referrals to boost engagement</li>
         <li>🏆 Earn and display custom badges</li>
       </ul>
-      <a href="#" style="color: #007bff; font-weight: bold; text-decoration: underline; display: inline-block; margin-top: 10px;">Discover Courtship App</a>
+      <a href="https://apps.apple.com/in/app/marriage-dating-app-courtship/id6474228756" style="color: #007bff; font-weight: bold; text-decoration: underline; display: inline-block; margin-top: 10px;">Discover Courtship App</a>
     </div>
 
     <!-- Project 3 -->
     <div style="background: white; padding: 55px; border-radius: 30px; box-shadow: 0 6px 10px rgba(0,0,0,0.1);">
       <h3 style="color: #007bff; font-size: 1.5rem; margin-bottom: 10px;">Routenote</h3>
       <p style="color: #333; line-height: 1.5;">
-        Routenote empowers independent musicians to thrive globally by offering seamless music distribution and royalty tracking tools.
+        Routenote empowers independent musicians to thrive globally by offering seamless music distribution and royalty tracking tools. As part of my responsibilities at 
+        <strong>McLanSys Solution Pvt Ltd</strong>, I contributed to implementing Spotify and Apple Music integrations, developing royalty tracking systems, and creating user-friendly analytics dashboards.
       </p>
       <ul style="list-style-type: none; padding-left: 0; margin-top: 15px;">
         <li>🎵 Upload & manage tracks efficiently</li>
@@ -249,14 +253,16 @@
         <li>📈 Royalty tracking and earnings reports</li>
         <li>📊 Detailed analytics dashboards</li>
       </ul>
-      <a href="#" style="color: #007bff; font-weight: bold; text-decoration: underline; display: inline-block; margin-top: 10px;">Check Routenote</a>
+      <a href="https://apps.apple.com/in/app/routenote/id1541983577" style="color: #007bff; font-weight: bold; text-decoration: underline; display: inline-block; margin-top: 10px;">Check Routenote at App Store</a>
+      <a href="https://play.google.com/store/apps/details?id=com.routenote.app&pcampaignid=web_share" style="color: #007bff; font-weight: bold; text-decoration: underline; display: inline-block; margin-top: 10px;">Check Routenote at Play Store</a>
     </div>
 
     <!-- Project 4 -->
     <div style="background: white; padding: 55px; border-radius: 30px; box-shadow: 0 6px 10px rgba(0,0,0,0.1);">
       <h3 style="color: #007bff; font-size: 1.5rem; margin-bottom: 10px;">Counseling App</h3>
       <p style="color: #333; line-height: 1.5;">
-        A mental health solution that connects users with licensed professionals while offering a holistic approach to well-being.
+        A mental health solution that connects users with licensed professionals while offering a holistic approach to well-being. I worked on this project at 
+        <strong>McLanSys Solution Pvt Ltd</strong>, contributing to the development of secure video sessions, scheduling features, and integrating health APIs.
       </p>
       <ul style="list-style-type: none; padding-left: 0; margin-top: 15px;">
         <li>🎥 Secure video sessions with therapists</li>
@@ -264,14 +270,14 @@
         <li>📚 Comprehensive self-help resources</li>
         <li>📲 Integration with health APIs</li>
       </ul>
-      <a href="#" style="color: #007bff; font-weight: bold; text-decoration: underline; display: inline-block; margin-top: 10px;">Explore Counseling App</a>
     </div>
 
     <!-- Project 5 -->
     <div style="background: white; padding: 55px; border-radius: 30px; box-shadow: 0 6px 10px rgba(0,0,0,0.1);">
       <h3 style="color: #007bff; font-size: 1.5rem; margin-bottom: 10px;">Cooking & Grocery App</h3>
       <p style="color: #333; line-height: 1.5;">
-        Simplify your kitchen experience with an all-in-one solution for recipe discovery, grocery management, and seamless shopping.
+        Simplify your kitchen experience with an all-in-one solution for recipe discovery, grocery management, and seamless shopping. I contributed to this project during my tenure at 
+        <strong>McLanSys Solution Pvt Ltd</strong>, where I focused on recipe recommendation algorithms and real-time order tracking features.
       </p>
       <ul style="list-style-type: none; padding-left: 0; margin-top: 15px;">
         <li>🍳 Recipe recommendations based on preferences</li>
@@ -279,10 +285,10 @@
         <li>📦 Real-time order tracking</li>
         <li>📊 Built-in nutrition calculators</li>
       </ul>
-      <a href="#" style="color: #007bff; font-weight: bold; text-decoration: underline; display: inline-block; margin-top: 10px;">Try Cooking App</a>
     </div>
   </div>
 </section>
+
 
     </section>
     
