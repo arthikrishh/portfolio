@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
 
     <style>
-
 @media screen and (max-width: 768px) {
   #projects {
     display: flex;
@@ -37,27 +36,28 @@
     align-items: center;
     justify-content: center;
     padding: 20px 10px;
+    background-color: #f8f9fa; /* Optional: Add a cohesive background color */
   }
 
   #projects > div {
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 20px;
-    width: 90%; /* Ensure the card fits well within the mobile screen */
-    max-width: 400px; /* Optional: Limit the width for larger screens */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-      background-color: #f8f9fa; /* Light blue color for the card background */
+    margin: 10px 0; /* Adjust margin to create consistent spacing between cards */
+    padding: 15px; /* Adjusted padding for better fit */
+    border-radius: 15px; /* Softer corners */
+    width: 90%; /* Keep the card responsive */
+    max-width: 400px; /* Limit the card width */
+    box-shadow: none; /* Completely remove the shadow */
+    background-color: #f8f9fa; /* Ensure the background is clean and consistent */
   }
 
   #projects h3 {
     text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.3rem; /* Slightly smaller font size for mobile */
+    margin-bottom: 8px;
   }
 
   #projects p {
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.9rem; /* Adjusted for better readability */
   }
 }
 
@@ -73,7 +73,7 @@
 .icons-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Consistent spacing between the cards */
+  gap: 15px; /* Reduced gap between the cards */
   justify-content: center;
 }
 
@@ -82,31 +82,31 @@
   flex-direction: column;
   align-items: center;
   justify-content: center; /* Center everything inside the card */
-  width: 120px; /* Ensure all cards are the same width */
-  height: 120px; /* Ensure all cards are square */
-  margin: 10px;
-  padding: 10px; /* Adjust padding for better spacing */
-  border-radius: 12px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 100px; /* Smaller card width */
+  height: 100px; /* Smaller card height to make it square */
+  margin: 8px; /* Reduced margin for a tighter layout */
+  padding: 8px; /* Adjusted padding for proper alignment */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   background-color: #fff;
   transition: transform 0.2s ease-in-out;
 }
 
 .tech-card img {
-  width: 60%; /* Make icon size proportional to the card */
-  height: 60%; /* Ensure the icon stays square within the card */
-  object-fit: contain; /* Keep the aspect ratio of the icon */
-  margin-bottom: 10px; /* Add spacing between the icon and text */
+  width: 50%; /* Proportional size for smaller cards */
+  height: 50%; /* Maintain square aspect ratio for the icons */
+  object-fit: contain; /* Ensure icons don’t get stretched */
+  margin-bottom: 8px; /* Adjusted spacing between the icon and text */
 }
 
 .tech-card span {
-  font-size: 14px; /* Slightly smaller text for better fit */
+  font-size: 12px; /* Reduced font size for better balance */
   color: #333;
   text-align: center;
 }
 
 .tech-card:hover {
-  transform: scale(1.05); /* Slight hover zoom for interactivity */
+  transform: scale(1.05); /* Retained subtle hover effect */
 }
 
 
