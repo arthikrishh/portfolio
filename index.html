@@ -46,6 +46,7 @@
     width: 90%; /* Ensure the card fits well within the mobile screen */
     max-width: 400px; /* Optional: Limit the width for larger screens */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: #f8f9fa; /* Light blue color for the card background */
   }
 
   #projects h3 {
@@ -68,11 +69,11 @@
    background-color: #f8f9fa;
    color: #333;
    }
-
- .icons-container {
+      
+.icons-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Slightly reduced gap between the cards */
+  gap: 20px; /* Consistent spacing between the cards */
   justify-content: center;
 }
 
@@ -80,28 +81,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px; /* Reduced padding for a smaller card size */
+  justify-content: center; /* Center everything inside the card */
+  width: 120px; /* Ensure all cards are the same width */
+  height: 120px; /* Ensure all cards are square */
   margin: 10px;
-  border-radius: 18x;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px; /* Adjust padding for better spacing */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   background-color: #fff;
   transition: transform 0.2s ease-in-out;
 }
 
 .tech-card img {
-  width: 50px; /* Slightly smaller icon size */
-  height: auto;
-  margin-bottom: 15px; /* Reduced spacing between the icon and text */
+  width: 60%; /* Make icon size proportional to the card */
+  height: 60%; /* Ensure the icon stays square within the card */
+  object-fit: contain; /* Keep the aspect ratio of the icon */
+  margin-bottom: 10px; /* Add spacing between the icon and text */
 }
 
 .tech-card span {
-  font-size: 16px; /* Adjusted for better balance in a smaller card */
+  font-size: 14px; /* Slightly smaller text for better fit */
   color: #333;
   text-align: center;
 }
 
 .tech-card:hover {
-  transform: scale(1.05); /* Retains the hover effect for interactivity */
+  transform: scale(1.05); /* Slight hover zoom for interactivity */
 }
 
 
